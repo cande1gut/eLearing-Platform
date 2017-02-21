@@ -4,7 +4,7 @@
 
 (define root (current-directory))
 
-(define index-page (file->string "racketWeb/index.html"))
+(define index-page (file->string "racketWeb/login.html"))
 
 (define (hello-servlet req)
   (response
@@ -19,5 +19,5 @@
 
 ; start serving:
 (serve/servlet hello-servlet
-               #:servlet-path "/racketWeb/index.html"
+               #:servlet-path "/racketWeb/login.html"
                #:extra-files-paths (list (build-path root)))
