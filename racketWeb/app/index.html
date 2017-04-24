@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Tizz</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="css/granim.css" type="text/css" />
+    <script src="https://use.fontawesome.com/c7d67c965e.js"></script>
+  </head>
+  <body>
+    
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block" align="center">
+        <p>Agrega los correos de las personas que quieres compartir</p>
+        <br><br><br><br><br>
+        Separados por comas
+        <textarea rows="4" cols="30"> </textarea>
+        <input class="button-send" type="submit" name="" class=""/>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block" align="center">
+        <p>¡Gracias por el like!</p>
+        <br><br><br><br><br>
+        ¿Algún comentario?<br>
+        <textarea rows="4" cols="30"> </textarea>
+        <a href="#" class="button-send">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enviar
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </a>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">Bienvenido</div>
+            
+            <div class="right">
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title" align="center"> Ven amigo, ven a divertirte</div>
+              <div class="content-block">
+                <div class="content-block-inner">
+                  <div class="canvas-interactive-wrapper">
+                    <canvas id="canvas-interactive"></canvas>
+                      <div class="cta-wrapper" align="center">
+                          <a href="#default-state" id="default-state-cta" class="active">Tizz</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-block-title">Empieza ahora</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="about.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="item-title">Acerca de</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="estudiante.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Quiero jugar</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="maestro.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Diseñar juego</div>
+                        </div>
+                      </div></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block-title">¿Te gustó?</div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel"><i class="fa fa-share" aria-hidden="true"></i>&nbsp;Compartir</a></div>
+                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel"><i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;Me gusta </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <a href="#" class="link"></a>
+            <a href="#" class="link">Con &nbsp;<i class="fa fa-heart" aria-hidden="true"></i> &nbsp;para Laura Torres</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/granim.js"></script>
+    <script type="text/javascript" src="js/my-granim.js"></script>
+  </body>
+</html>
